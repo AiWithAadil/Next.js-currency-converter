@@ -1,0 +1,135 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: url('../image/converter.jpg');
+  background-size: cover;
+}
+
+.converter-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-size: cover;
+}
+
+.converter-box {
+  background-color: rgba(255, 255, 255, 0.1); /* more transparent */
+  padding: 2rem;
+  border-radius: 1rem;
+  min-height: 45vh;
+  min-width: 40vh;
+  backdrop-filter: blur(20px); /* blurrier */
+  border: 1px solid black;
+}
+
+.converter-box h2 {
+  color: #15cfeb;
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.converter-box h2 i {
+  color: rgb(53, 155, 202);
+}
+
+
+.converter-form {
+  margin: 2rem 0 1rem 0;
+}
+
+.converter-form p{
+  color:rgb(211, 211, 211)
+}
+
+.converter-form select,
+.converter-form button,
+.converter-form input {
+  width: 100%;
+  border: none;
+  outline: none;
+  border-radius: 0.75rem;
+}
+
+.converter-form input {
+  font-size: 17px;
+  background-color: transparent;
+  border-bottom: 2px solid #d306fc;
+  backdrop-filter: blur(20px);
+  color: black;
+  border: 1px solid black;
+}
+
+.converter-form input::placeholder {
+  color: black;
+}
+
+
+.converter-form button:hover {
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 6px;
+  background: linear-gradient(50deg, rgb(5, 236, 217), #ae15eb, #7f50ff);
+}
+
+.converter-form input {
+  border: 1px solid lightgray;
+  font-size: 1rem;
+  height: 3rem;
+  padding-left: 0.5rem;
+}
+
+.dropdown {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.dropdown i {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
+
+.select-container img {
+  max-width: 2rem;
+}
+
+.select-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 6rem;
+  border-radius: 0.5rem;
+  border: 1px solid lightgray;
+  border-color: black;
+}
+
+.select-container select {
+  width: 45%;
+  font-size: x-small;
+}
+
+.msg {
+  text-align: center;
+  margin: 2rem 0 2rem 0;
+}
+
+.converter-form button {
+  height: 3rem;
+  background: linear-gradient(50deg, rgb(249, 12, 249), #15a4eb, #ff50dc);
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 6px;
+  color: #ffffff;
+  font-size: 1.15rem;
+  cursor: pointer;
+}
